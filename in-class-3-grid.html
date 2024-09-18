@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Grid Layout</title>
+</head>
+<style> 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.grid-item-1 {
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6; 
+}
+.grid-item-2 {
+    background-color: green;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 4; 
+    grid-column-end: 6;
+}
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1"></div>
+        <div class="grid-item-2"></div>
+    </div>
+</body>
+</html>
+
