@@ -1,0 +1,17 @@
+CISC 3300 
+Homework 1
+1. HTML is the language used to create websites. It provides a structure for building web pages.
+
+2. CSS is the styling for websites, determining how everything looks and feels. It allows the programmer to control text, colors, sizes, and layouts.
+
+3. The Fordham.edu website uses navigation links at the top for easy access to other parts of the site, keeping everything organized. The main focus is on important news and information in the center of the page. Scrolling down, you find less important links, featured news articles, and a calendar for upcoming events.
+
+4. An HTML element is something you can interact with, like forms, images, and text. A tag is a specific identifier for an element that helps us modify it. Attributes are customizations that differentiate an element from others.
+
+5. A CSS rule consists of a selector and a set of declarations inside curly braces, where each declaration has a property and a value.
+
+6. CSS rules cascade based on specificity and order. If there are multiple rules for the same element, the most specific one is applied first, and if they are equally specific, the last one in the code is applied.
+
+7. <img src="./images/pinecone.jpg" />
+
+8.The default behavior when submitting a form is to send the data to the server specified in the action attribute and usually navigate to the response page.
