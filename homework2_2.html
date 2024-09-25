@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Divs Side by Side</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* Media query for screens < 500px */
+@media (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* Default layout for screens >= 500px */
+@media (min-width: 501px) {
+    .flex-container {
+        flex-direction: row;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" style="background-color: #f44336;"></div>
+        <div class="flex-item" style="background-color: #4CAF50;"></div>
+        <div class="flex-item" style="background-color: #2196F3;"></div>
+    </div>
+</body>
+</html>

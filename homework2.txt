@@ -1,0 +1,9 @@
+CISC 3300 
+Homework 2
+
+3. Flexbox is a one-dimensional layout system in CSS. It arranges items in a row or a column, making it ideal for simpler layouts like navigation bars or forms.
+CSS Grid is a two-dimensional layout system that allows control over both rows and columns. It is used for more complex layouts, such as web pages or image galleries.
+Flexbox is best for layouts where items are arranged in a single direction, either horizontally or vertically. In contrast, CSS Grid is better for layouts that need control over both axes, allowing for more detailed grid designs.
+Both Flexbox and CSS Grid provide control over alignment, sizing, and spacing. However, Flexbox is more suitable for simpler layouts, while CSS Grid offers more flexibility for intricate designs.
+Flexbox and CSS Grid are responsive, meaning they adjust the layout of elements based on the screen size. CSS Grid offers greater control over the overall structure, while Flexbox focuses on aligning items within a smaller space.
+Flexbox is simpler for aligning items along one axis, while CSS Grid is more powerful for creating complex, grid-based layouts that need control over both rows and columns.
