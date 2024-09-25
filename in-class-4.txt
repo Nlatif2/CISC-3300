@@ -1,0 +1,10 @@
+CISC 3300 F24 
+In class assignment 3 
+1. In certain programming languages the source code is not directly translated by the target machine. Instead, a different program, aka the interpreter, reads and executes the code, this is called an __interpreted______ language. 
+2. Type checking is performed at runtime, means that the type of a variable is allowed to change over its lifetime, this is called __dynamic______ typing. 
+3. JS for web browser work doesn’t tend to use classes to make objects, and is written in a more ___functional_____ style. 
+4. Variables that are block scoped, not declarable use the keyword _let___ 
+5. __scope______ determines the accessibility (visibility) of variables. 
+6. Variables assigned with the __const______ keyword are block scoped and not redeclarable. 
+7. Functions that can be passed as an argument to another function and called later are called __callback functions______. 
+8. Non primitive data types are (almost)all technically __objects______ in memory. 
