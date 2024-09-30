@@ -1,0 +1,16 @@
+1. JavaScript is a high-level programming language that is used for web applications and to build dynamic websites. JavaScript can run on web browsers to animate elements on a webpage, and for forms and form validations. JavaScript can also run on servers.
+An interpreted language is code that is executed directly by the browser or in an environment where it does not need to be compiled. A compiled language is converted into machine code by a compiler before it is run. The machine code is then executed directly by the system's hardware.
+
+2. In dynamically typed languages, the type of a variable is determined at runtime, which means you can change the type of the variable as the program is running. However, in statically typed languages, the type of the variable must be determined before compiling the code, and the type of the variable cannot be changed.
+In a strongly typed language, variables have strict types, which means converting the types of variables is limited or not allowed. However, in a weakly typed language, type conversion is more flexible and occurs more frequently.
+
+3. var: Declares a variable that is function-scoped or globally scoped. That variable can be re-assigned or re-declared.
+let: Declares a block-scoped variable that can be re-assigned but not re-declared.
+const: Declares a block-scoped variable that cannot be re-assigned after it has been declared.
+
+4. An anonymous function is a function without a name, used in situations where a function is expected but doesn’t need to be referred to later.
+A higher-order function is a function that can take other functions as arguments or return a function as a result.
+A callback function is a function passed as an argument to another function and executed after an operation has been completed.
+A first-class function is a function treated like a variable, meaning it can be assigned to variables, passed as arguments, and returned from other functions.
+
+5. An object in JavaScript is a collection of key-value pairs, where the keys (properties) can be strings, and the values can be of any type, including functions. Objects are used to group related data and functionality together.

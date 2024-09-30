@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title> Questions 6-10</title>
+</head>
+<body>
+
+<script>
+    // Question 6
+    const cats = [
+        { name: 'Charlie', adoptionStatus: 'available' },
+        { name: 'Lily', adoptionStatus: 'not-available' },
+        { name: 'Coco', adoptionStatus: 'available' },
+        { name: 'Oreo', adoptionStatus: 'not-available' },
+        { name: 'Luna', adoptionStatus: 'available' },
+        { name: 'Milo', adoptionStatus: 'available' },
+        { name: 'Lola', adoptionStatus: 'not-available' },
+        { name: 'Leo', adoptionStatus: 'available' },
+        { name: 'Willow', adoptionStatus: 'available' },
+        { name: 'Bella', adoptionStatus: 'not-available' },
+        { name: 'Max', adoptionStatus: 'available' },
+        { name: 'Cleo', adoptionStatus: 'available' },
+        { name: 'Lucy', adoptionStatus: 'not-available' },
+        { name: 'Daisy', adoptionStatus: 'available' }
+    ];
+
+    // a.
+    let adoptedCats = [];
+    for (let i = 0; i < cats.length; i++) {
+        if (cats[i].adoptionStatus === 'available') {
+            adoptedCats.push(cats[i].name);
+        }
+    }
+
+    // b. 
+    let adoptionSentence = `You have adopted: ${adoptedCats.join(', ')}.`;
+    console.log(adoptionSentence);
+
+    // Question 7
+    let randomNum = Math.random() * 10;
+    let result = randomNum > 5 ? "greater than five!" : "less than five!";
+    console.log(`The number ${randomNum} is ${result}`);
+
+    // Question 8
+    const cat = { name: "Pinecone", age: 13, type: 'Munchkin', cuteness: 9001 };
+    for (let key in cat) {
+        console.log(`${key}: ${cat[key]}`);
+    }
+
+    // Question 9
+    let num1 = 1;
+    let str1 = '1';
+    if (num1 == str1) {
+        console.log("1 and '1' are equal (using ==).");
+    }
+    if (num1 === str1) {
+        console.log("1 and '1' are equal (using ===).");
+    } else {
+        console.log("1 and '1' are not equal (using ===).");
+    }
+
+    // Question 10
+    const cuteCats = cats.map(cat => `${cat.name} is cute!`);
+    console.log(cuteCats);
+</script>
+
+</body>
+</html>
