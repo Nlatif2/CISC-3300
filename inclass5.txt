@@ -1,0 +1,14 @@
+CISC 3300
+In Class Assignment 5
+
+1. The Document Object Model (DOM) specifies how browsers should create a __model__ of an HTML page and how JavaScript can __access__ and __manipulate__ the contents of a __dynamic__ web page while it is in the browser window.
+
+2. If a malicious user adds code to an input that is eventually generated as HTML, that code could potentially be run for different users, this is an example of __Cross-Site Scripting (XSS)__.
+
+3. HTML events are __actions__ that happen to HTML elements.
+
+4.__addEventListener()__ sets up a function that will be called whenever the specified event is delivered to the target.
+
+5. __jQuery__ takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+6. The __val()__ function grabs the value of inputs in jQuery.
