@@ -1,0 +1,12 @@
+CISC 3300 SP24
+Homework 4
+
+1. The DOM (Document Object Model) is a tree-like structure that represents your web page, which allows JavaScript to manipulate HTML elements. The DOM tree organizes these elements as nodes.
+
+2. Cross-Site Scripting (XSS) allows attackers to inject malicious scripts into web pages. To guard against them, you can limit types of user input on the webpage.
+
+3. An event is a user action (like a click) that JavaScript responds to and can perform actions according to the event.
+
+4. It listens for a specific event (like 'click') on an element and runs a function when it happens. It takes the event type, the callback function, and an optional third parameter.
+
+5. jQuery is a library that simplifies tasks in JavaScript, such as DOM manipulation. We use it because it is much easier to do certain things such as DOM manipulation than JavaScript. To use it, load it via a CDN like this: <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>.

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Learning JavaScript Events and DOM</title>
+    <style>
+        .error {
+            color: white;
+            background-color: red;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .success {
+            color: white;
+            background-color: green;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <ul id="cats-list">
+
+    </ul>
+    <form id="myForm">
+        <label for="catName">Enter a cat name:</label>
+        <input type="text" id="catName" name="catName" placeholder="Cat name">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+    <script>
+        const cats = [
+            { name: 'Charlie', adoptionStatus: 'available' },
+            { name: 'Lily', adoptionStatus: 'not-available' },
+            { name: 'Coco', adoptionStatus: 'available' },
+            { name: 'Oreo', adoptionStatus: 'not-available' },
+            { name: 'Luna', adoptionStatus: 'available' },
+            { name: 'Milo', adoptionStatus: 'available' },
+            { name: 'Lola', adoptionStatus: 'not-available' },
+            { name: 'Leo', adoptionStatus: 'available' },
+            { name: 'Willow', adoptionStatus: 'available' },
+            { name: 'Bella', adoptionStatus: 'not-available' },
+            { name: 'Max', adoptionStatus: 'available' },
+            { name: 'Cleo', adoptionStatus: 'available' },
+            { name: 'Lucy', adoptionStatus: 'not-available' },
+            { name: 'Daisy', adoptionStatus: 'available' }
+        ];
+        const myList = document.getElementById('myList');
+        myList.addEventListener('click', function() {
+            const listItems = document.querySelectorAll('#myList li');
+            listItems.forEach(item => {
+                item.style.color = 'blue';
+            });
+        });
+        const catsList = document.getElementById('cats-list');
+        cats.forEach(cat => {
+            const listItem = document.createElement('li'); 
+            listItem.textContent = cat.name;
+            catsList.appendChild(listItem);
+        });
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const input = document.getElementById('catName').value.trim();
+            const messageContainer = document.getElementById('message');
+            messageContainer.innerHTML = '';
+            if (input === '') {
+                const errorMessage = document.createElement('div');
+                errorMessage.textContent = 'Please Provide a Value';
+                errorMessage.classList.add('error');
+                messageContainer.appendChild(errorMessage);
+            } else {
+                const successMessage = document.createElement('div');
+                successMessage.textContent = 'Success';
+                successMessage.classList.add('success');
+                messageContainer.appendChild(successMessage);
+
+                console.log(input);
+            }
+        });
+    </script>
+</body>
+</html>
