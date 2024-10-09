@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Blueberry Muffins",
+      "description": "Soft and fluffy muffins packed with fresh, juicy blueberries, perfect for breakfast or a snack."
+    },
+    {
+      "id": 2,
+      "title": "Strawberry Shortcake",
+      "description": "A delightful dessert made with layers of sweet strawberries, fluffy whipped cream, and tender shortcake."
+    },
+    {
+      "id": 3,
+      "title": "Vegetable Chicken Soup",
+      "description": "A comforting and hearty soup made with tender chicken, fresh vegetables, and flavorful broth."
+    }
+  ]
+}

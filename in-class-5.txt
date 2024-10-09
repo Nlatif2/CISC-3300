@@ -1,0 +1,10 @@
+CISC 3300
+In Class 5
+
+1. ___AJAX___ allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.
+2. ___HTTP___ is a protocol for sending data between clients and servers over the internet.
+3. ___REST___ is not a protocol or a standard, but an architectural style of organizing our code so that requests act upon resources in a standardized way.
+4. ___JSON___ is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays.
+5. An application programming interface is a way for two or more computer programs or components to ___communicate___ with each other.
+6. Each time a script enters a new execution context, variables, functions, arguments are created; this is called ___execution context creation___.
+7. Closures are the ability of a function to remember the variables and functions that are declared in its ___lexical___ scope.

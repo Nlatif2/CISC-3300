@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Fetch Recipes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Recipe List</h1>
+    
+    <script>
+        $(document).ready(function() {
+            $.get("http://localhost:3000/recipes", function(data) {
+                console.log(data);
+            }).fail(function() {
+                console.log("Error fetching recipes.");
+            });
+        });
+    </script>
+</body>
+</html>
