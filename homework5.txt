@@ -1,0 +1,16 @@
+1. HTTP (HyperText Transfer Protocol) is the foundation of any data exchange on the web. It’s a protocol used for transmitting hypermedia documents (like HTML). Here are common HTTP request methods:
+GET retrieves data from the server like loading a web page. POST sends new data to the server such as submitting a form. PUT updates or replaces an existing resource on the server. PATCH partially updates a resource on the server. DELETE deletes a resource from the server.
+
+2. An API (Application Programming Interface) allows two applications to communicate with each other such as enabling apps to send data back and forth. JSON (JavaScript Object Notation) is a lightweight format for exchanging data, which is usually between a client and server, and it's easy for both humans and machines to read.
+
+3. AJAX (Asynchronous JavaScript and XML) is a technique to update components of a web page without reloading the whole page. It uses JavaScript to make HTTP requests to a server and then loads the data in the background. Asynchronous code means the program doesn’t wait for the task to finish before moving on to the next task. For example, in JavaScript, you can send a request to a server, and while waiting for the response, other code can execute.
+
+4. REST (Representational State Transfer) is an architectural style used to design APIs. In REST, resources such as posts and users, are the key focus, and they are represented by URIs (Uniform Resource Identifiers).
+Retrieve multiple posts: `GET /posts`
+Retrieve a single post: `GET /posts/{id}`
+Save a post: `POST /posts`
+Update a post: `PUT /posts/{id}` (or `PATCH /posts/{id}`)
+Delete a post: `DELETE /posts/{id}`
+
+5. Hoisting In JavaScript, variables and function declarations are "hoisted" or moved to the top of their scope before code execution. This means you can use functions and variables before you declare them.
+A closure is a function that retains access to its outer scope, even after the outer function has finished executing. This allows the inner function to remember the variables from the outer function.

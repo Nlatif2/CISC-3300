@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>NYC Weather</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #temperature {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Current Air Temperature in NYC</h1>
+    <p id="temperature">Loading...</p>
+    <script>
+        const temperatureElement = document.getElementById('temperature');
+        async function getWeather() {
+            const url = 'https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true&temperature_unit=fahrenheit';
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const temperature = data.current_weather.temperature;
+                temperatureElement.innerHTML = `The current temperature is ${temperature}°F`;
+            } catch (error) {
+                temperatureElement.innerHTML = 'Unable to fetch the temperature.';
+                console.error('Error fetching the weather data:', error);
+            }
+        }
+        getWeather();
+    </script>
+</body>
+</html>
