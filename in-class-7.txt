@@ -1,0 +1,11 @@
+CISC 3300 
+In Class Assignment 7
+
+1. In order to route incoming requests that aren’t attempting to access specific files to our index.php page, we need to make use of the settings in the ____.htaccess____ file.
+2. All PHP files must start with a ____<?php ____.
+3. Variables start with the ____ $____ character in PHP.
+4. var_dump: dumps information about one or more variables. The information includes the type and value of the variable(s) - also can print out ____arrays and objects____.
+5. ____Associative arrays____ are key-value pairs, behave like objects in JS.
+6. Variables will be evaluated in a string if it’s in ____double quotes____.
+7. The ____include or require____ statement takes all the text/code/markup that exists in the specified file and copies it into the file that uses it.
+8. When declaring a function, we can specify what kind of ___data type___ each argument should be.
