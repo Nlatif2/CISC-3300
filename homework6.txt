@@ -1,0 +1,16 @@
+CISC 3300
+Homework 6
+
+1. PHP is a server-side scripting language that is used to generate dynamic web content by processing code on the server side and delivering HTML to the client. Server-side languages handle tasks like database queries, form handling, and content generation.
+
+2. PHP and JavaScript both handle variables, control structures, and functions, but PHP runs on the server-side, while JavaScript runs in the browser or client-side, making JavaScript better for interactive front-end tasks.
+
+3. PHP is chosen by many over others is for its wide support, ease of use, large community, and seamless integration with databases, making it cost-effective and overall a solution for web development.
+
+4. The include keyword throws a warning if the file is missing but continues execution, while require causes a fatal error and stops the script.
+	a. If a variable is used from a file that hasn’t been included, PHP will throw an undefined variable error or stop if using require.
+
+5. echo outputs simple values or strings to the browser, while var_dump provides detailed information about variables, including their types and values, which is mainly used for debugging.
+
+10. 
+	B. The src attribute in the HTML file is used to point to an image. To access the image relatively, you would specify the path from the HTML file to the image. Since the image is in the same directory as the HTML file, you can simply use the image filename: <img src="image.jpg" >
