@@ -1,0 +1,12 @@
+CISC 3300
+In class 8
+
+1. Classes are ____blueprints____ for creating objects.
+2. The ____visibility____ of a property, a method, or a constant can be defined by prefixing the declaration with the keywords public, protected, or private.
+3. When a class derives from another class, it is called ____inheritance____.
+4. ____Namespaces____ allow the PHP interpreter to tell the difference between two classes, functions, or constants that share the same name.
+5. Several predefined variables in PHP are ____superglobals____, which means they are available in all scopes throughout a script.
+6. ____The function____ can be called directly, from within a script, to perform a specific task.
+7. The ____header()____ function sends a raw HTTP header to a client.
+8. ____MVC (Model-View-Controller)____ is an architectural/design pattern that separates an application into three main logical components: Model, View, and Controller.
+9. ____Libraries____ allow developers to use code that they, or other programmers, have already written to perform a task.
