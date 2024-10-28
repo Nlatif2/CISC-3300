@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+        h1 { color: #007BFF; }
+        .user-list { list-style: none; padding: 0; }
+        .user-item { padding: 10px; border: 1px solid #ccc; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>User List</h1>
+    <ul id="user-list" class="user-list"></ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('/users')
+                .then(response => response.json())
+                .then(data => {
+                    const userList = document.getElementById("user-list");
+                    data.forEach(user => {
+                        const userItem = document.createElement("li");
+                        userItem.className = "user-item";
+                        userItem.textContent = `${user.name} - ${user.email}`;
+                        userList.appendChild(userItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching user data:', error));
+        });
+    </script>
+</body>
+</html>

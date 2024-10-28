@@ -1,0 +1,12 @@
+CISC 3300
+Homework 7
+
+1. A class is a blueprint for creating objects, defining properties and methods. An object is an instance of a class. OOP is a programming approach that organizes code using classes and objects, enhancing code structure and reusability.
+
+2. Abstract classes define a base structure that other classes must follow, ensuring consistency across subclasses while allowing flexibility in specific implementations.
+
+3. Superglobals are PHP variables accessible from any script scope, like $_GET (query data), $_POST (form data), $_SESSION (session data), $_COOKIE (client-side data), and $_SERVER (server environment).
+
+4. First, declare the namespace in the class file with namespace, then import it in another file using use to simplify class instantiation.
+
+5. MVC is a pattern where the Model manages data, the View displays it, and the Controller handles user interactions, coordinating between Model and View to update the user interface.
