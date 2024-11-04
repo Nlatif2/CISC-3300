@@ -1,0 +1,14 @@
+CISC 3300
+Homework 8
+
+1. A query string with two values for www.example.com: www.example.com?name=Nafisa&age=23.
+2. Escaping a character means adding a special symbol (\) which is used to prevent it from being misinterpreted by code, used to handle special characters in URLs, HTML, and code.
+3. 
+A- 200: OK – The request was successful.
+B- 400: Bad Request – The server could not understand the request because of invalid syntax.
+C- 401: Unauthorized – Authentication is required and has failed or not been provided.
+D- 403: Forbidden – The server understands the request but refuses to authorize it.
+E- 404: Not Found – The requested resource could not be found on the server.
+F- 500: Internal Server Error – The server encountered an unexpected condition that prevented it from fulfilling the request.
+4. Data validation ensures that input data is correct, secure, and in the expected format, preventing errors and security risks.
+5. Sessions and cookies are methods for storing user-specific data in a web application; cookies store data on the client-side, while sessions store it on the server-side to maintain user state between requests.
