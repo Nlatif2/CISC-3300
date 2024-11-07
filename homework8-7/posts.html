@@ -1,0 +1,15 @@
+<!-- public/views/posts.html -->
+<h1>Posts</h1>
+<form method="GET" action="/posts">
+    <input type="text" name="search" placeholder="Search by title">
+    <button type="submit">Search</button>
+</form>
+
+<?php if (!empty($posts)): ?>
+    <?php foreach ($posts as $post): ?>
+        <h2><?php echo htmlspecialchars($post['title']); ?></h2>
+        <p><?php echo htmlspecialchars($post['content']); ?></p>
+    <?php endforeach; ?>
+<?php else: ?>
+    <p>No posts found.</p>
+<?php endif; ?>

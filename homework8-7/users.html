@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Users Validation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container mt-3 w-25">
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input id="search-text" type="text" class="form-control" placeholder="search for a user" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button id="search-button" class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="users-container"></div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#search-button").click(function () {
+                    const url = $('#search-text').val() ? `http://localhost:8888/api/users?name=${$('#search-text').val()}` : `http://localhost:8888/api/users`;
+                    $.ajax({
+                        url: url,
+                        type: "GET",
+                        success: function (data) {
+                            $('#users-container').html('')
+                            $.each( data, function( key, value ) {
+                                $('#users-container').append(`
+                                   <p>${value['id']} ${value['name']}</p> `)
+                            });
+                        }
+                    });
+                })
+            })
+        </script>
+    </body>
+</html>
