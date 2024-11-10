@@ -1,0 +1,84 @@
+CISC 3300
+Homework 9
+
+
+1. SQL is a language used to manage and manipulate databases, while MySQL is a relational database management system (RDBMS) that uses SQL. Relational databases store data in tables with rows and columns, structured to define relationships using keys.
+
+2. Normalization is the process of organizing database tables to reduce redundancy and improve data integrity by dividing them into smaller tables and defining relationships.
+
+3. A primary key uniquely identifies each record in a table, while a foreign key links one table to another by referencing the primary key of the related table.
+
+4. The three types are One-to-One (one record in each table is related), One-to-Many (one record in one table relates to multiple records in another), and Many-to-Many (records in one table relate to multiple records in another through an intermediary table).
+
+5. An inner join returns only matching rows from both tables, while a left join returns all rows from the left table and matching rows from the right table, with NULL for unmatched rows.
+
+6.
+A: 
+CREATE DATABASE homework_9;
+B: 
+USE homework_9;
+
+CREATE TABLE library (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(80) NOT NULL
+);
+
+C: 
+CREATE TABLE books (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(80) NOT NULL
+);
+
+D: 
+CREATE TABLE libraryBook (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    libraryID INT(11) NOT NULL,
+    bookID INT(11) NOT NULL
+);
+
+7. 
+A:
+INSERT INTO library (name) VALUES 
+('Queens Central Library'), 
+('New York Public Library'), 
+('Brooklyn Library');
+
+INSERT INTO books (name) VALUES 
+('SQL Basics'), 
+('PHP for Beginners'), 
+('Data Structures and Algorithms'), 
+('Mastering Database Design'), 
+('Learning Python');
+
+B:
+INSERT INTO libraryBook (libraryID, bookID) VALUES 
+(1, 1), -- Queens Central Library - A Guide to Birds
+(1, 2), -- Queens Central Library - Birds for Beginners
+(2, 3), -- New York Public Library - Parakeets for Beginners
+(3, 1), -- Brooklyn Library - A Guide to Birds
+(3, 4); -- Brooklyn Library - Cockatiels for Beginners
+
+C:
+SELECT * FROM library WHERE id = 1;
+
+D:
+SELECT * FROM books WHERE name LIKE '%SQL%';
+
+E:
+SELECT * FROM books ORDER BY name ASC;
+
+8.
+SELECT books.name AS BookName, library.name AS LibraryName
+FROM libraryBook
+JOIN books ON libraryBook.bookID = books.id
+JOIN library ON libraryBook.libraryID = library.id;
+
+9.
+UPDATE books
+SET name = 'A Guide to Parakeets and Cockatiels'
+WHERE id = 1;
+
+10.
+DELETE FROM books
+WHERE id = 3;
+
