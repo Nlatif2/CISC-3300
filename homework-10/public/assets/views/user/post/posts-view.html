@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/posts-view.css">
+    <title>Posts</title>
+</head>
+<body>
+<h1>All Posts</h1>
+<a href="/posts/create">Add New Post</a>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($posts as $post): ?>
+            <tr>
+                <td><?php echo htmlspecialchars($post['title']); ?></td>
+                <td>
+                    <a href="/posts/edit/<?php echo htmlspecialchars($post['id']); ?>">Edit</a>
+                    <form action="/posts/delete/<?php echo htmlspecialchars($post['id']); ?>" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+</body>
+</html>

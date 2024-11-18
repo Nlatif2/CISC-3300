@@ -1,0 +1,22 @@
+CISC 3300
+Homework 10
+
+1. PDO (PHP Data Objects) is a database access layer providing a uniform method for interacting with databases. 
+A DSN (Data Source Name) specifies the connection details such as host, database name and charset for PDO to connect to a database.
+
+2. A .env file stores environment variables such as credentials or configuration settings, keeping sensitive data separate from the codebase. 
+A .gitignore file specifies files or directories Git should ignore, preventing them from being committed to the repository.
+
+3. Passwords should never be uploaded to GitHub to avoid exposing sensitive information, which can lead to security breaches.
+
+4. SQL injection is a security vulnerability where malicious SQL code is injected into a query to manipulate or access a database unauthorizedly.
+
+5. Prepared statements are a database feature that allows SQL queries to be precompiled and safely executed with user-supplied data. Variables can be passed using placeholders (e.g., ? or :name) and bound with methods like bindParam() or execute().
+
+6.C: CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

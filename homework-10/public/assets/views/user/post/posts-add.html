@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/posts-view.css">
+    <title>Add Post</title>
+</head>
+<body>
+<h1>Add New Post</h1>
+<form action="/posts" method="POST">
+    <label for="title">Title:</label><br/>
+    <input type="text" id="title" name="title" required><br/><br/>
+    
+    <label for="content">Content:</label><br/>
+    <textarea id="content" name="content" required></textarea><br/><br/>
+    
+    <button type="submit">Create Post</button>
+</form>
+<a href="/posts">Back to Posts</a>
+</body>
+</html>
