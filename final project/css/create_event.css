@@ -1,0 +1,28 @@
+/* Create Event CSS */
+.container {
+    max-width: 800px; 
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-size: 25px;
+}
+#CButton {
+    margin-left: 40%;
+}
+.form-control {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+.form-control-file {
+    padding: 10px;
+}
+.image-preview {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}

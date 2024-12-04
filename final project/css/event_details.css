@@ -1,0 +1,63 @@
+/* Event Details CSS */
+.event-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.event_information {
+    width: 100%;
+    height: auto;
+}
+.event_title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+.event-description {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+}
+.event_img {
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+.event_img img {
+    max-width: 100%;
+    height: auto;
+}
+.share-buttons {
+    margin-top: 20px;
+}
+.share-buttons .btn {
+    margin-right: 10px;
+}
+.attendee-list {
+    margin-top: 20px;
+}
+.attendee-list h3 {
+    margin-bottom: 10px;
+}
+.rsvp_share
+{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.btn-primary {
+    transition: 0.5s;
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary:hover {
+    transition: 0.5s;
+    background-color: #0056b3;
+    filter: brightness(1.5);
+}
+@media (max-width: 768px) {
+.event-details {
+    display:block;
+}
+}
+.EvDet {
+    font-family: "Poppins", sans-serif;
+}

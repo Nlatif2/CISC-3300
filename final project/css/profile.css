@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-4 {
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+.card {
+    transition: 0.5s ease;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+    transition: 0.5s ease;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    scale:1.05;
+}
+.card-body {
+    padding-bottom: 0;
+}
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 1 1 100%;
+    }
+}
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+.btn-view {
+    background-color: #007bff;
+    color: white;
+}
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+}
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+.btn:hover {
+    transition: all 0.3s ease;
+    filter: brightness(1.35);
+}
+.single-event-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.single-event-container .col-md-4 {
+    flex: 0 0 auto;
+    width: auto;
+}
